@@ -1,6 +1,6 @@
 #make a calculator that can add, subtract, multiply, and divide
 
-#path python -u /Users/Jackson-Mac/Desktop/pythonpractice/calculator.py
+#path: place your file path here
 
 #welcome message
 def welcome():
