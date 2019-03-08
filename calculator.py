@@ -1,6 +1,8 @@
 #make a calculator that can add, subtract, multiply, and divide
 
-#path: place your file path here
+#path python -u /Users/Jackson-Mac/Desktop/pythonpractice/calculator.py
+
+import decimal
 
 #welcome message
 def welcome():
@@ -9,7 +11,7 @@ Welcome to Jackson's Calculator''')
 
 #define calculate()
 def calculate():
-    operation = raw_input('''
+    operation = input('''
 Please choose an operation:
 + for addition
 - for subtraction
@@ -19,26 +21,26 @@ Please choose an operation:
 ''')
 
     if operation == '+':
-        num1 = int(input('Enter your first number: '))
-        num2 = int(input('Enter your second number: '))
+        num1 = float(input('Enter your first number: '))
+        num2 = float(input('Enter your second number: '))
         print('{} + {} ='.format(num1, num2))
         print(num1 + num2)
 
     elif operation == '-':
-        num1 = int(input('Enter your first number: '))
-        num2 = int(input('Enter your second number: '))
+        num1 = float(input('Enter your first number: '))
+        num2 = float(input('Enter your second number: '))
         print('{} - {} ='.format(num1, num2))
         print(num1 - num2)
 
     elif operation == '*':
-        num1 = int(input('Enter your first number: '))
-        num2 = int(input('Enter your second number: '))
+        num1 = float(input('Enter your first number: '))
+        num2 = float(input('Enter your second number: '))
         print('{} * {} ='.format(num1, num2))
         print(num1 * num2)
 
     elif operation == '/':
-        num1 = int(input('Enter your first number: '))
-        num2 = int(input('Enter your second number: '))
+        num1 = float(input('Enter your first number: '))
+        num2 = float(input('Enter your second number: '))
         print('{} / {} ='.format(num1, num2))
         print(num1 / num2)
 
@@ -49,7 +51,7 @@ Please choose an operation:
 
 #define again()
 def again():
-    calc_again = raw_input('''
+    calc_again = input('''
 Do you want to execute another operation?
 Type Y for YES or N for NO.
 ''''''
@@ -69,7 +71,7 @@ Type Y for YES or N for NO.
 
 #define error()
 def error():
-    invalid_operation = raw_input('''
+    invalid_operation = input('''
 Uh-oh! You have entered an invalid operation.
 Would you like to return and enter a valid operation?
 Type Y for YES or N for NO.
